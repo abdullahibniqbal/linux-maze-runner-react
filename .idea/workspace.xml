@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="205a108a-22f0-401e-94a0-c4275e2ffd70" name="Default Changelist" comment="" />
+    <list default="true" id="205a108a-22f0-401e-94a0-c4275e2ffd70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/domain/model/composites/glyphs/glyph-constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/model/composites/glyphs/glyph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/polymorphic/dispatch/glyph-painter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/layout/maze.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/react/components/AnswerComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/react/components/QuestionCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/widgets/widget-jsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/composites/bridge/customTemplateBridge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/composites/bridge/htmlBridge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/composites/composite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/composites/question.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +31,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XOXylIvOfrpO6KEz01FM881sLZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,10 +56,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v12.13.1-win-x64/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\linux-maze-runner\src\ui" />
+      <recent name="C:\Users\user\WebstormProjects\linux-maze-runner\src" />
       <recent name="C:\Users\user\WebstormProjects\linux-maze-runner\src\domain\model" />
     </key>
   </component>
@@ -69,7 +98,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580918372175</updated>
-      <workItem from="1580918379390" duration="17561000" />
+      <workItem from="1580918379390" duration="20502000" />
+      <workItem from="1581618718441" duration="696000" />
+      <workItem from="1582570652693" duration="21771000" />
     </task>
     <servers />
   </component>
@@ -85,37 +116,53 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1581256302746" />
-    <state width="1344" height="174" key="GridCell.Tab.0.bottom" timestamp="1581256942252">
+    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583042238401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581256942252" />
-    <state width="1344" height="174" key="GridCell.Tab.0.center" timestamp="1581256942251">
+    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583042238401" />
+    <state width="1344" height="174" key="GridCell.Tab.0.bottom" timestamp="1583065632244">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581256942251" />
-    <state width="1344" height="174" key="GridCell.Tab.0.left" timestamp="1581256942251">
+    <state width="1344" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583065632244" />
+    <state width="1344" height="174" key="GridCell.Tab.0.center" timestamp="1583065632244">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581256942251" />
-    <state width="1344" height="174" key="GridCell.Tab.0.right" timestamp="1581256942252">
+    <state width="1344" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583065632244" />
+    <state width="1344" height="174" key="GridCell.Tab.0.left" timestamp="1583065632244">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581256942252" />
-    <state x="186" y="0" key="SettingsEditor" timestamp="1581259155763">
+    <state width="1344" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583065632243" />
+    <state width="1344" height="174" key="GridCell.Tab.0.right" timestamp="1583065632244">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1581259155763" />
+    <state width="1344" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583065632244" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1583046815603">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583046815603" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1583068538669">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583068538669" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581252918056">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1581252918056" />
-    <state x="335" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581255830407">
+    <state x="335" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583052039863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="335" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1581255830407" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1581254203067">
+    <state x="335" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1583052039863" />
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1583056048798">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1581254203067" />
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1583056048798" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1583067110733">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1583067110733" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583066590990">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583066590990" />
   </component>
 </project>

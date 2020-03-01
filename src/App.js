@@ -2,48 +2,36 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { renderedHtml } from "./domain/model/composites/question";
-import { consComposite } from "./domain/model/composites/composite";
+import { widgetJsx } from "./ui/widgets/widget-jsx";
+import { glyphs } from "./domain/model/composites/glyphs/glyph";
+import { glyphConstants } from "./domain/model/composites/glyphs/glyph-constants";
 
 function App() {
 
-  const composite = consComposite(
-      drawQuestion("How to install MySQL in CentOS7?", "I have tried this and that, etc."),
-      [consComposite(
-          drawAnswer("Install it using Yum."),
-          [consComposite(
-              drawComment("This works!")
-          ),
-            consComposite(
-                drawComment("This does not work but could be a problem in my machine!")
-            )]
-      )]
-  );
+  const glyphsFactory = glyphs(widgetJsx);
+  let questionGlyph = glyphsFactory.consGlyph(glyphConstants.QUESTION, {
+    text: "How to install MySQL in CentOS 7?",
+      isClosed: true,
+      author: "Mustehssun Iqbal"
+  });
 
-  function drawQuestion(title, description) {
-    return function() {
-      return `
-            <h2>Question: ${title}</h2>
-            <p>Description: ${description}</p>   
-        `;
-    }
-  }
+  console.log(questionGlyph);
 
-  function drawAnswer(description) {
-    return function() {
-      return `
-            <p>Answer: ${description}</p>
-        `;
-    }
-  }
+  questionGlyph = questionGlyph.addChild(questionGlyph, glyphsFactory.consGlyph(glyphConstants.ANSWER, {
+    text: "Install it using Yum.",
+    isClosed: false,
+    author: "Yum Guru"
+  }));
 
-  function drawComment(description) {
-    return function() {
-      return `
-            <p>Comment: ${description}</p>
-        `;
-    }
-  }
+  questionGlyph = questionGlyph.addChild(questionGlyph, glyphsFactory.consGlyph(glyphConstants.ANSWER, {
+    text: "Install it using RPM",
+    isClosed: false,
+    author: "RPM Guru"
+  }));
+
+  const QuestionWidget = questionGlyph.draw(questionGlyph.state);
+  const YumAnswerWidget = questionGlyph.children[0].draw(questionGlyph.children[0].state);
+  const RPMAnswerWidget = questionGlyph.children[1].draw(questionGlyph.children[1].state);
 
   return (
     <div className="App">
@@ -52,7 +40,14 @@ function App() {
         <p>
           <code>Linux maze runner</code>
         </p>
-        <div>{consComposite()}</div>
+        <div>
+          <QuestionWidget />
+          <br />
+          <YumAnswerWidget />
+          <br />
+          <RPMAnswerWidget />
+          <br />
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
