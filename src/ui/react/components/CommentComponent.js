@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function SimpleCard(question) {
+export default function CommentComponent(comment) {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
 
@@ -29,16 +29,13 @@ export default function SimpleCard(question) {
         <Card className={classes.root}>
             <CardContent>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Question
+                    Comment
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    { question.text }
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    { question.isClosed }
+                    { comment.text }
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Author: { question.author }
+                    Author: { comment.author }
                 </Typography>
             </CardContent>
         </Card>

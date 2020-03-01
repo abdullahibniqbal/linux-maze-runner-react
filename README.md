@@ -68,6 +68,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 =======
-# linux-maze-runner-react
-This is the react project for Linux maze runner
+# linux-canvas-runner-react
+This is the react project for Linux canvas runner
 >>>>>>> a1b6d02312c63d7a80d6828dd3fb92948487e6e1

@@ -1,5 +1,6 @@
-import QuestionComponent from "../react/components/QuestionCard";
+import QuestionComponent from "../react/components/QuestionComponent";
 import AnswerComponent from "../react/components/AnswerComponent";
+import CommentComponent from "../react/components/CommentComponent";
 
 export const widgetJsx = {
     drawQuestion,
@@ -15,6 +16,6 @@ function drawAnswer(answer) {
     return () => AnswerComponent(answer);
 }
 
-function drawComment() {
-
+function drawComment(comment) {
+    return () => CommentComponent(comment);
 }

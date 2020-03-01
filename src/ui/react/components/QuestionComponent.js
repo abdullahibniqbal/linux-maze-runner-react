@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function AnswerComponent(answer) {
+export default function Question(question) {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
 
@@ -29,16 +29,16 @@ export default function AnswerComponent(answer) {
         <Card className={classes.root}>
             <CardContent>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Answer
+                    Question
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    { answer.text }
+                    { question.text }
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    { answer.isClosed }
+                    { question.isClosed }
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Author: { answer.author }
+                    Author: { question.author }
                 </Typography>
             </CardContent>
         </Card>
